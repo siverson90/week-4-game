@@ -4,6 +4,7 @@ var randomNum=0;
 var wins=0;
 var losses=0;
 var crystalArr=[1];
+var userCounter=0;
 
 // ****Functions*****
 
@@ -11,6 +12,7 @@ var crystalArr=[1];
 function initalizeGame(){
   crystalArr=[1];
   randomNum=0;
+  userCounter=0;
   randomNumGen();
   crystalRandomNum();
   loop();
@@ -30,9 +32,7 @@ function crystalRandomNum(){
     crystalArr.push(num);
   }
 }
-
 // Takes number from array and assigns value to each image.
-
 function loop(){
    for(var i = 0; i < crystalArr.length; i++){
    crystalArr[i] === $("#crystal-" + [i + 1]).attr("value",crystalArr[i]);
@@ -42,4 +42,21 @@ function loop(){
 // ******MAIN GAME*******
 
 initalizeGame();
+
+$(".crystal").on("click", function(){
+  userSelectedValue= parseInt($(this).attr("value"));
+  console.log(userSelectedValue);
+
+  userCounter= userCounter + userSelectedValue;
+  console.log(userCounter);
+
+  if(userCounter===randomNum){
+    alert("you win");
+  }
+  else if(userCounter > randomNum){
+    alert("you lose");
+  }
+
+})
+
 
