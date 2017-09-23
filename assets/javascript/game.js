@@ -24,6 +24,7 @@ function initalizeGame(){
 // Generates random number that will be assigned to the user to guess
 function randomNumGen(){
   randomNum= Math.ceil(Math.random()* (120-30)+ 30);
+  $("#randNumber").text(randomNum);
 }
 // Generates random number between 1-12 and pushes to crystalArr
 function crystalRandomNum(){
@@ -48,13 +49,19 @@ $(".crystal").on("click", function(){
   console.log(userSelectedValue);
 
   userCounter= userCounter + userSelectedValue;
+  $("#countDisplay").text(userCounter);
+  
   console.log(userCounter);
 
   if(userCounter===randomNum){
-    alert("you win");
+    wins++;
+    $("#wins").text(wins)
+    initalizeGame();
   }
   else if(userCounter > randomNum){
-    alert("you lose");
+    losses++;
+    $("#losses").text(losses)
+    initalizeGame();
   }
 
 })
