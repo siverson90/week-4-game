@@ -50,7 +50,7 @@ $(".crystal").on("click", function(){
 
   userCounter= userCounter + userSelectedValue;
   $("#countDisplay").text(userCounter);
-  
+
   console.log(userCounter);
 
   if(userCounter===randomNum){
@@ -64,6 +64,6 @@ $(".crystal").on("click", function(){
     initalizeGame();
   }
 
-})
+});
 
 

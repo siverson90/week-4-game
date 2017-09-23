@@ -1,0 +1,91 @@
+#container{
+  margin: 5px;
+  width: 100%;
+  max-width: 400px;
+}
+
+#header {
+  width: 70%;
+  max-height: 80px;
+  height: 100%;
+  margin-bottom: 5px;
+}
+
+h1 {
+  width: 100%;
+  background-color: #d76c00;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: white;
+}
+
+#instructionsWrap {
+  width: 100%;
+  background-color: #fee7ca;
+  display: inline-block;
+}
+
+#instructionsWrap p{
+  color: green;
+  font-weight: bolder;
+}
+
+#randNumber {
+  width: 200px;
+  height: 100px;
+  background-color:#00d182;
+  color: #713f6c;
+  font-size: 25px;
+  float: left;
+}
+
+#counterRender{
+  height: 100px;
+  background-color: #00fffe;
+  width: 60px;
+  display: inline-block;
+  float: right;
+  margin-right: 80px;
+}
+
+#score {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  width: 400px;
+}
+
+#clearfix {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+#images {
+  width: 90%;
+  display: inline-block;
+  clear: both;
+}
+
+img {
+  float: left;
+  margin: 5px;
+  width: 75px;
+}
+
+#userScore {
+  width: 150px;
+  background-color: #00a799;
+  display: inline-block;
+}
+
+#userScore p {
+  margin: 2px;
+}
+
+#wins, #losses{
+  margin: 5px;
+}

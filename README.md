@@ -1,12 +1,12 @@
 # week-4-game
 
 Game set-up:
-1. Game starts with a score randomly generated and is placed in a div. Range 30-120.
+1. Game starts with a score randomly generated and is placed in a div. Range 30-120. DONE
 
 A. Start game with an function Intialize, function:
   - randomly generate number (function all to number generator)
-  - randomly assign values to 4 images.
-    - use a for loop to iterate through length of array and generate four values (hard code for loop length 4) and each time push to image ARRAY. 
+  - randomly assign values to 4 images. DONE
+    - use a for loop to iterate through length of array and generate four values (hard code for loop length 4) and each time push to image ARRAY.DONE 
   - clear userScore
 
   Show text with jQuery handles: classes and IDs. 
