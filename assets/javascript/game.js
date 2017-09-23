@@ -13,7 +13,7 @@ function initalizeGame(){
   randomNum=0;
   randomNumGen();
   crystalRandomNum();
-  assignCrystal();
+  loop();
   console.log(randomNum);
   console.log(crystalArr);
 }
@@ -31,11 +31,12 @@ function crystalRandomNum(){
   }
 }
 
-function assignCrystal(){
- crystalArr[0] === $("#crystal-1").attr("value", crystalArr[0]);
- crystalArr[1] === $("#crystal-2").attr("value", crystalArr[1]);
- crystalArr[2] === $("#crystal-3").attr("value", crystalArr[2]);
- crystalArr[3] === $("#crystal-4").attr("value", crystalArr[3]);
+// Takes number from array and assigns value to each image.
+
+function loop(){
+   for(var i = 0; i < crystalArr.length; i++){
+   crystalArr[i] === $("#crystal-" + [i + 1]).attr("value",crystalArr[i]);
+   }
 }
 
 // ******MAIN GAME*******
