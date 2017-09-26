@@ -33,10 +33,10 @@ function crystalRandomNum(){
     crystalArr.push(num);
   }
 }
-// Takes number from array and assigns value to each image.
+// Takes number from array and assigns value to each image. RM the boolean
 function loop(){
    for(var i = 0; i < crystalArr.length; i++){
-   crystalArr[i] === $("#crystal-" + [i + 1]).attr("value",crystalArr[i]);
+      $("#crystal-" + [i + 1]).attr("value",crystalArr[i]);
    }
 }
 

@@ -6,7 +6,7 @@ body{
 #container{
   margin: 5px;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 #header {
@@ -24,10 +24,12 @@ h1 {
   padding-bottom: 20px;
   font-size: 40px;
   color: white;
+  padding-left: 5px;
+  padding-right: 15px;
 }
 
 #instructionsWrap {
-  width: 100%;
+  width: 80%;
   background-color: #fee7ca;
   display: inline-block;
 }
@@ -78,22 +80,35 @@ h1 {
 img {
   float: left;
   margin: 5px;
-  width: 75px;
+  width: 90px;
 }
 
-#userScore {
+.userScore {
   width: 300px;
   background-color: #00a799;
+  height: 25px;
+  margin: 5px;
+  color:white;
 }
 
 .scoreSpacing-1 {
   display: block;
+  margin-bottom: 5px;
 }
 
 .scoreSpacing-2 {
   display: block;
+  height: 50px;
 }
 
 #wins, #losses{
   margin: 5px;
+}
+
+#largeScore{
+  height: 50px;
+}
+
+#countDisplay{
+  font-size: 25px;
 }
